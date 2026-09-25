@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TripDice Privacy Policy</title>
+<meta name="description" content="Privacy Policy for the TripDice mobile app (com.tripdice.app).">
+<style>
+  :root{--bg:#faf9f7;--ink:#1f2933;--muted:#5b6b7a;--line:#e4e1db;--accent:#1b4965;--card:#ffffff}
+  @media (prefers-color-scheme:dark){:root{--bg:#121417;--ink:#ecebe7;--muted:#a3adb8;--line:#2a2f36;--accent:#8fc1e3;--card:#1a1e23}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Hiragino Sans","Noto Sans JP",sans-serif}
+  main{max-width:820px;margin:0 auto;padding:40px 16px 80px}
+  h1{font-size:2rem;line-height:1.2;margin:0 0 .25em}
+  h2{font-size:1.35rem;margin:2.2em 0 .6em;padding-top:1.2em;border-top:1px solid var(--line)}
+  h3{font-size:1.05rem;margin:1.6em 0 .4em}
+  p,li{max-width:70ch}
+  .meta{color:var(--muted);margin:0 0 1.5em}
+  .lang{display:flex;gap:12px;margin:1em 0 2em;flex-wrap:wrap}
+  .lang a{color:var(--accent);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:6px 14px;background:var(--card)}
+  table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.95rem}
+  th,td{border:1px solid var(--line);padding:8px 10px;vertical-align:top;text-align:left}
+  th{background:var(--card)}
+  code{font-size:.9em;background:var(--card);border:1px solid var(--line);border-radius:4px;padding:1px 5px}
+  .note{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;color:var(--muted)}
+  a{color:var(--accent)}
+  section[lang="ja"] h2{border-top-color:var(--line)}
+  hr.divider{border:0;border-top:3px double var(--line);margin:4em 0}
+</style>
+</head>
+<body>
+<main>
+
+<section id="en" lang="en">
+<h1>TripDice Privacy Policy</h1>
+<p class="meta">Effective date: 25 September 2026 · Applies to the TripDice mobile app for Android and iOS (package name <code>com.tripdice.app</code>)</p>
+<div class="lang"><a href="#en">English</a><a href="#ja">日本語</a></div>
+
+<p>TripDice is a travel-inspiration app that lets you roll a dice to pick a destination at random. This policy explains what information the app handles, why, and the choices you have. We have tried to keep it short and specific to what the app actually does.</p>
+
+<h2>1. Who is responsible</h2>
+<p>TripDice is developed and operated by Yoshiki Nakamura, an individual developer (the “developer”, “we”). You can contact us about privacy at <a href="mailto:tripdiceapp@gmail.com">tripdiceapp@gmail.com</a>.</p>
+
+<h2>2. Summary</h2>
+<ul>
+  <li>You can use TripDice without creating an account. Saved trips are stored on your device.</li>
+  <li>Creating an account is optional. If you do, we store your e‑mail address and your saved trips so they can be backed up and synced between your devices.</li>
+  <li>Location is used only when you tap “Use my location”, only to suggest a nearby departure airport, and only on your device. Your coordinates are not stored and are not sent to our servers.</li>
+  <li>Crash reporting (Firebase Crashlytics) is <strong>off by default</strong>. You can turn it on or off in the app’s settings.</li>
+  <li>The app does not show advertisements, does not use the advertising ID, and does not sell your data.</li>
+</ul>
+
+<h2>3. Information the app handles</h2>
+
+<h3>3.1 Information stored only on your device</h3>
+<ul>
+  <li>Your dice settings (travel mode, home country, region, departure airport, travel dates, display currency, language).</li>
+  <li>Up to 100 saved trips (destination, dates, departure airport).</li>
+  <li>Your Crashlytics on/off choice.</li>
+</ul>
+<p>This information stays on your device unless you create an account and enable backup (see 3.3). It is removed when you delete the app.</p>
+
+<h3>3.2 Anonymous sign‑in and app integrity</h3>
+<p>When the app connects to our backend (Google Firebase), it signs in anonymously and receives a random user ID. This ID is used to authorise requests, to apply fair‑use rate limits, and to protect the service from abuse. It is not linked to your name or e‑mail unless you create an account. The app also uses Firebase App Check (Google Play Integrity on Android, App Attest/DeviceCheck on iOS) to confirm that requests come from a genuine copy of the app. Rate‑limit counters are kept for up to 24 hours.</p>
+
+<h3>3.3 Optional account (free membership)</h3>
+<p>If you choose to register, we collect and store:</p>
+<ul>
+  <li>your e‑mail address and a password (the password is handled by Firebase Authentication and is never visible to us);</li>
+  <li>your saved trips (destination, dates, departure airport), so they can be backed up and synced to other devices where you sign in.</li>
+</ul>
+<p>Your e‑mail address is used only for sign‑in, address verification and password resets. We do not send marketing e‑mail. You can delete your account and all of its data at any time from the Account screen in the app.</p>
+
+<h3>3.4 Trip details you request</h3>
+<p>When you tap “Explore this trip”, the app asks our backend for details about that destination. The request contains the destination, your chosen dates, your departure airport (if you selected one), your language and display currency, and your anonymous user ID. Our backend then queries third‑party services on your behalf (see section 5). We do not send your name, e‑mail address, device identifiers or location to those services.</p>
+
+<h3>3.5 Location</h3>
+<p>The app asks for “while in use” location permission only if you tap “Use my location” on the departure‑airport screen. The location is used once, on your device, to search a bundled list of airports within about 180 km and suggest one. Raw coordinates are not stored, not logged and not sent to our servers. You can decline the permission and search for an airport by name instead. The app never uses background location.</p>
+
+<h3>3.6 Crash reports (opt‑in)</h3>
+<p>Crash reporting through Firebase Crashlytics is disabled by default. If you turn it on in Settings, Crashlytics collects crash stack traces, the app version, device model, operating system version and a Crashlytics installation identifier so we can fix bugs. You can turn it off again at any time.</p>
+
+<h3>3.7 What we do not collect</h3>
+<p>The app does not collect contacts, photos, files, precise location history, advertising identifiers, payment details or analytics about how you use the app. There are no third‑party advertising or analytics SDKs in the app.</p>
+
+<h2>4. Why we use this information (legal bases)</h2>
+<table>
+<tr><th>Purpose</th><th>Information</th><th>Legal basis (EU/UK GDPR)</th></tr>
+<tr><td>Provide the core features (rolling, catalogue, trip details)</td><td>Anonymous user ID, trip request details</td><td>Performance of a contract / legitimate interest in operating the service</td></tr>
+<tr><td>Optional backup and sync</td><td>E‑mail address, saved trips</td><td>Performance of a contract (your request to register)</td></tr>
+<tr><td>Security, abuse prevention and fair‑use limits</td><td>Anonymous user ID, App Check tokens, rate‑limit counters</td><td>Legitimate interest</td></tr>
+<tr><td>Crash diagnostics</td><td>Crash logs, device information</td><td>Consent (you enable it in Settings)</td></tr>
+<tr><td>Suggest a nearby airport</td><td>Device location (on device only)</td><td>Consent (system permission prompt)</td></tr>
+</table>
+
+<h2>5. Service providers and third parties</h2>
+<p>We use the following providers to run TripDice. They process data only as needed to provide their service to us.</p>
+<table>
+<tr><th>Provider</th><th>Used for</th><th>What it receives</th></tr>
+<tr><td>Google Firebase (Google LLC / Google Ireland Ltd): Authentication, Cloud Firestore, Cloud Functions, App Check, Crashlytics</td><td>Sign‑in, data storage, backend, integrity checks, opt‑in crash reports</td><td>Anonymous user ID; e‑mail and saved trips for account holders; crash data if enabled. Backend region: europe‑west1 (Belgium).</td></tr>
+<tr><td>Google Weather API and Open‑Meteo; Visual Crossing (previous‑year weather)</td><td>Weather for your destination and dates</td><td>Destination and date only (from our backend)</td></tr>
+<tr><td>Google Places API</td><td>Places and points of interest near the destination</td><td>Destination and language only (from our backend)</td></tr>
+<tr><td>Travelpayouts / Aviasales (where enabled)</td><td>Reference flight prices and a link to search flights</td><td>Route (airports) and dates only (from our backend). If you tap through to Aviasales, that website’s own privacy policy applies. Links may contain an affiliate identifier; this does not identify you personally.</td></tr>
+<tr><td>Google Maps</td><td>“How to get there” links</td><td>Opens in your browser or Maps app; Google’s privacy policy applies</td></tr>
+<tr><td>Wikimedia Commons and licensed photographers</td><td>Destination photos</td><td>No personal data; photos are served by our backend</td></tr>
+</table>
+<p>We do not sell personal information and we do not share it with advertisers or data brokers.</p>
+
+<h2>6. International transfers</h2>
+<p>Our backend runs in the European Union (Google Cloud, europe‑west1). Google may process data in other countries under the EU Standard Contractual Clauses and equivalent safeguards. The developer may access account data from Japan or Austria for support purposes.</p>
+
+<h2>7. Retention</h2>
+<ul>
+  <li>Anonymous user IDs and rate‑limit counters: counters expire within 24 hours; anonymous accounts may be purged periodically.</li>
+  <li>Account data (e‑mail, saved trips): kept until you delete your account, after which it is removed from our systems.</li>
+  <li>Crash reports: kept by Firebase Crashlytics for 90 days.</li>
+  <li>On‑device data: until you delete it or uninstall the app.</li>
+</ul>
+
+<h2>8. Your rights and choices</h2>
+<ul>
+  <li><strong>Delete your account:</strong> Account screen → Delete account. This removes your e‑mail and synced trips from our servers.</li>
+  <li><strong>Turn crash reporting on or off:</strong> Settings in the app.</li>
+  <li><strong>Location:</strong> decline the permission, or revoke it in your device settings at any time.</li>
+  <li><strong>Access, correction, portability, objection, restriction:</strong> e‑mail us at <a href="mailto:tripdiceapp@gmail.com">tripdiceapp@gmail.com</a>. We will respond within one month.</li>
+  <li>If you are in the EU/EEA or UK you may also lodge a complaint with your local data protection authority. In Japan, requests under the Act on the Protection of Personal Information may be sent to the same address.</li>
+</ul>
+
+<h2>9. Children</h2>
+<p>TripDice is not directed at children under 16 and we do not knowingly collect personal information from them. If you believe a child has created an account, contact us and we will delete it.</p>
+
+<h2>10. Security</h2>
+<p>All communication between the app and our backend is encrypted (HTTPS/TLS). Passwords are handled by Firebase Authentication and are never stored in plain text. Access to stored data is restricted by Firestore security rules and server‑side validation of each request.</p>
+
+<h2>11. Changes to this policy</h2>
+<p>If we change what the app collects, we will update this page and the effective date, and, for material changes, notify you in the app. The current version is always available at the address where you are reading this.</p>
+
+<h2>12. Contact</h2>
+<p>Yoshiki Nakamura, developer of TripDice<br>E‑mail: <a href="mailto:tripdiceapp@gmail.com">tripdiceapp@gmail.com</a></p>
+</section>
+
+<hr class="divider">
+
+<section id="ja" lang="ja">
+<h1>TripDice プライバシーポリシー</h1>
+<p class="meta">施行日：2026年9月25日 ・ 対象：TripDice モバイルアプリ（Android / iOS、パッケージ名 <code>com.tripdice.app</code>）</p>
+<div class="lang"><a href="#en">English</a><a href="#ja">日本語</a></div>
+
+<p>TripDiceは、サイコロを振って旅行先をランダムに決める旅のインスピレーションアプリです。本ポリシーでは、アプリが取り扱う情報、その目的、利用者が選べる設定を、アプリの実際の動作に沿って説明します。</p>
+
+<h2>1. 事業者</h2>
+<p>TripDiceは個人開発者の中村圭希（以下「開発者」または「当方」）が開発・運営しています。プライバシーに関するお問い合わせ先：<a href="mailto:tripdiceapp@gmail.com">tripdiceapp@gmail.com</a></p>
+
+<h2>2. 要点</h2>
+<ul>
+  <li>アカウントを作らずに利用できます。保存した旅は端末内に保存されます。</li>
+  <li>会員登録は任意です。登録すると、バックアップと端末間の同期のためにメールアドレスと保存した旅を当方のサーバーに保存します。</li>
+  <li>位置情報は「現在地を使う」を押したときだけ、近くの出発空港を提案する目的で、端末内でのみ使用します。座標は保存せず、サーバーにも送信しません。</li>
+  <li>クラッシュレポート（Firebase Crashlytics）は<strong>初期状態でオフ</strong>です。アプリの設定で切り替えられます。</li>
+  <li>広告の表示、広告IDの利用、個人データの販売は行いません。</li>
+</ul>
+
+<h2>3. アプリが取り扱う情報</h2>
+
+<h3>3.1 端末内にのみ保存される情報</h3>
+<ul>
+  <li>抽選の条件（海外／国内モード、居住国、地域、出発空港、日程、表示通貨、言語）</li>
+  <li>保存した旅（目的地・日程・出発空港）最大100件</li>
+  <li>Crashlyticsのオン／オフ設定</li>
+</ul>
+<p>これらは、会員登録してバックアップを有効にしない限り端末内にとどまり、アプリを削除すると消去されます。</p>
+
+<h3>3.2 匿名サインインとアプリの完全性確認</h3>
+<p>アプリがバックエンド（Google Firebase）に接続する際、匿名でサインインし、ランダムなユーザーIDが付与されます。このIDはリクエストの認可、利用回数の制限、不正利用の防止に使用します。会員登録をしない限り、氏名やメールアドレスとは結び付きません。また、Firebase App Check（AndroidではGoogle Play Integrity、iOSではApp Attest／DeviceCheck）を用いて、正規のアプリからのリクエストであることを確認します。利用回数のカウンターは最長24時間保持します。</p>
+
+<h3>3.3 任意のアカウント（無料会員）</h3>
+<p>登録を選んだ場合、次の情報を収集・保存します。</p>
+<ul>
+  <li>メールアドレスとパスワード（パスワードはFirebase Authenticationが管理し、当方が閲覧することはありません）</li>
+  <li>保存した旅（目的地・日程・出発空港）。バックアップと、ログインした他の端末との同期に使用します。</li>
+</ul>
+<p>メールアドレスはログイン、アドレス確認、パスワード再設定のためだけに使用し、宣伝メールは送信しません。アカウントとそのデータは、アプリのアカウント画面からいつでも削除できます。</p>
+
+<h3>3.4 旅の詳細のリクエスト</h3>
+<p>「この旅を詳しく見る」を押すと、アプリはバックエンドに目的地の詳細を要求します。リクエストには目的地、選択した日程、出発空港（選択している場合）、言語、表示通貨、匿名ユーザーIDが含まれます。バックエンドは利用者に代わって外部サービスに照会します（第5条）。氏名、メールアドレス、端末識別子、位置情報をこれらのサービスへ送ることはありません。</p>
+
+<h3>3.5 位置情報</h3>
+<p>出発空港の選択画面で「現在地を使う」を押したときだけ、「使用中のみ」の位置情報権限を求めます。位置情報は端末内で1回だけ使用し、同梱の空港リストから約180km以内の空港を検索して提案します。生の座標は保存・記録・送信しません。権限を許可せず、空港名で検索することもできます。バックグラウンドでの位置情報取得は行いません。</p>
+
+<h3>3.6 クラッシュレポート（オプトイン）</h3>
+<p>Firebase Crashlyticsによるクラッシュレポートは初期状態で無効です。設定で有効にすると、不具合修正のためにクラッシュのスタックトレース、アプリのバージョン、端末機種、OSバージョン、Crashlyticsのインストール識別子が収集されます。いつでも無効に戻せます。</p>
+
+<h3>3.7 収集しない情報</h3>
+<p>連絡先、写真、ファイル、位置情報の履歴、広告識別子、支払い情報、アプリの利用状況に関する分析データは収集しません。第三者の広告SDKや分析SDKは組み込んでいません。</p>
+
+<h2>4. 利用目的と法的根拠</h2>
+<table>
+<tr><th>目的</th><th>情報</th><th>法的根拠（EU/UK GDPR）</th></tr>
+<tr><td>主要機能の提供（抽選、カタログ、旅の詳細）</td><td>匿名ユーザーID、リクエスト内容</td><td>契約の履行／サービス運営上の正当な利益</td></tr>
+<tr><td>任意のバックアップと同期</td><td>メールアドレス、保存した旅</td><td>契約の履行（利用者の登録申込み）</td></tr>
+<tr><td>セキュリティ、不正利用防止、利用回数の制限</td><td>匿名ユーザーID、App Checkトークン、カウンター</td><td>正当な利益</td></tr>
+<tr><td>クラッシュ診断</td><td>クラッシュログ、端末情報</td><td>同意（設定で有効化）</td></tr>
+<tr><td>近くの空港の提案</td><td>端末の位置情報（端末内のみ）</td><td>同意（OSの権限ダイアログ）</td></tr>
+</table>
+
+<h2>5. 委託先および第三者サービス</h2>
+<table>
+<tr><th>提供者</th><th>用途</th><th>受け取る情報</th></tr>
+<tr><td>Google Firebase（Google LLC／Google Ireland Ltd）：Authentication、Cloud Firestore、Cloud Functions、App Check、Crashlytics</td><td>サインイン、データ保存、バックエンド、完全性確認、オプトインのクラッシュレポート</td><td>匿名ユーザーID。会員はメールアドレスと保存した旅。有効時のクラッシュデータ。バックエンドのリージョン：europe‑west1（ベルギー）</td></tr>
+<tr><td>Google Weather API、Open‑Meteo、Visual Crossing（前年の天気）</td><td>目的地と日程の天気</td><td>目的地と日付のみ（バックエンド経由）</td></tr>
+<tr><td>Google Places API</td><td>目的地周辺のスポット情報</td><td>目的地と言語のみ（バックエンド経由）</td></tr>
+<tr><td>Travelpayouts／Aviasales（有効な場合）</td><td>航空券の参考料金と検索リンク</td><td>路線（空港）と日程のみ（バックエンド経由）。Aviasalesへ遷移した後は同サイトのプライバシーポリシーが適用されます。リンクには提携識別子が含まれることがありますが、個人を特定するものではありません。</td></tr>
+<tr><td>Google マップ</td><td>「行き方を調べる」リンク</td><td>ブラウザまたはマップアプリで開き、Googleのポリシーが適用されます</td></tr>
+<tr><td>Wikimedia Commons および許諾を得た撮影者</td><td>目的地の写真</td><td>個人データなし。写真はバックエンドから配信</td></tr>
+</table>
+<p>個人情報を販売することはなく、広告事業者やデータブローカーに提供することもありません。</p>
+
+<h2>6. 国外への移転</h2>
+<p>バックエンドは欧州連合内（Google Cloud、europe‑west1）で稼働しています。GoogleはEU標準契約条項等の保護措置のもとで他の国においてデータを処理することがあります。開発者はサポート対応のため、日本またはオーストリアからアカウントデータにアクセスすることがあります。</p>
+
+<h2>7. 保存期間</h2>
+<ul>
+  <li>匿名ユーザーIDと利用回数カウンター：カウンターは24時間以内に失効。匿名アカウントは定期的に削除することがあります。</li>
+  <li>アカウントデータ（メールアドレス、保存した旅）：アカウント削除まで。削除後は当方のシステムから消去します。</li>
+  <li>クラッシュレポート：Firebase Crashlyticsにて90日間。</li>
+  <li>端末内のデータ：利用者が削除するかアプリをアンインストールするまで。</li>
+</ul>
+
+<h2>8. 利用者の権利と選択</h2>
+<ul>
+  <li><strong>アカウントの削除：</strong>アカウント画面 → アカウントを削除。メールアドレスと同期した旅がサーバーから削除されます。</li>
+  <li><strong>クラッシュレポートの切り替え：</strong>アプリの設定。</li>
+  <li><strong>位置情報：</strong>権限を許可しない、または端末の設定からいつでも取り消せます。</li>
+  <li><strong>開示、訂正、データポータビリティ、異議、処理の制限：</strong><a href="mailto:tripdiceapp@gmail.com">tripdiceapp@gmail.com</a> までご連絡ください。1か月以内に対応します。</li>
+  <li>EU／EEA／英国の方は各国のデータ保護機関に申立てができます。日本の個人情報保護法に基づく請求も同じ連絡先で受け付けます。</li>
+</ul>
+
+<h2>9. 子どもの利用</h2>
+<p>TripDiceは16歳未満の子どもを対象としておらず、子どもの個人情報を故意に収集することはありません。子どもがアカウントを作成したと思われる場合はご連絡ください。削除します。</p>
+
+<h2>10. セキュリティ</h2>
+<p>アプリとバックエンド間の通信はすべて暗号化（HTTPS／TLS）されています。パスワードはFirebase Authenticationが管理し、平文で保存されることはありません。保存データへのアクセスはFirestoreセキュリティルールと、サーバー側での各リクエストの検証によって制限しています。</p>
+
+<h2>11. 本ポリシーの変更</h2>
+<p>アプリが収集する内容が変わる場合は、本ページと施行日を更新し、重要な変更についてはアプリ内でお知らせします。最新版は常にこのページで確認できます。</p>
+
+<h2>12. お問い合わせ</h2>
+<p>TripDice 開発者 中村圭希<br>メール：<a href="mailto:tripdiceapp@gmail.com">tripdiceapp@gmail.com</a></p>
+</section>
+
+</main>
+</body>
+</html>
