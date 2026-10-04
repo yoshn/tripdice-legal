@@ -33,7 +33,7 @@
 
 <section id="en" lang="en">
 <h1>TripDice Privacy Policy</h1>
-<p class="meta">Effective date: 25 September 2026 · Last updated 26 September 2026 · Applies to the TripDice mobile app for Android and iOS (package name <code>com.tripdice.app</code>)</p>
+<p class="meta">Effective date: 25 September 2026 · Last updated 3 October 2026 · Applies to the TripDice mobile app for Android and iOS (package name <code>com.tripdice.app</code>)</p>
 <div class="lang"><a href="#en">English</a><a href="#ja">日本語</a></div>
 
 <p>TripDice is a travel-inspiration app that lets you roll a dice to pick a destination at random. This policy explains what information the app handles, why, and the choices you have. We have tried to keep it short and specific to what the app actually does.</p>
@@ -46,6 +46,7 @@
   <li>You can use TripDice without creating an account. Saved trips are stored on your device.</li>
   <li>Creating an account is optional. If you do, we store your e‑mail address and your saved trips so they can be backed up and synced between your devices.</li>
   <li>Location is used only when you tap “Use my location”, only to suggest a nearby departure airport, and only on your device. Your coordinates are not stored and are not sent to our servers.</li>
+  <li>Usage analytics is <strong>off unless you allow it</strong>. If you tap “Allow”, the app sends anonymous usage events (for example “dice rolled” or “destination opened”) to Google Analytics for Firebase so we can improve the app. You can switch this off at any time on the main screen.</li>
   <li>Crash reporting is <strong>switched off</strong> in the current version of the app. No crash reports are sent to us.</li>
   <li>The app does not show advertisements, does not use the advertising ID, and does not sell your data.</li>
 </ul>
@@ -79,8 +80,13 @@
 <h3>3.6 Crash reports</h3>
 <p>The app includes the Firebase Crashlytics library, but crash‑report collection is switched off in the current version and no crash reports, stack traces or device diagnostics are sent to us. If a future version introduces crash reporting, it will be off by default, controllable in the app, and this policy will be updated first.</p>
 
-<h3>3.7 What we do not collect</h3>
-<p>The app does not collect contacts, photos, files, precise location history, advertising identifiers, payment details or analytics about how you use the app. There are no third‑party advertising or analytics SDKs in the app.</p>
+<h3>3.7 Usage analytics (only if you allow it)</h3>
+<p>The first time you open the app we ask whether you allow anonymous usage analytics. Nothing is collected until you tap “Allow”, and you can change your choice at any time with the “Share anonymous usage data” switch on the main screen.</p>
+<p>If you allow it, the app uses Google Analytics for Firebase to record app events such as screens viewed, dice rolls (mode, region, how the dice was thrown), the destination shown or explored (city and country), taps on places, directions or flight links, shares, saved trips and account sign‑up or sign‑in. Google Analytics also receives a random app‑instance ID, device model, operating system, app version, language and an approximate country or city derived from the IP address (the IP address itself is not stored by Google Analytics).</p>
+<p>Analytics data is not linked to your name or e‑mail address, is not used for advertising or tracking across other apps and websites, and we do not use the advertising identifier (IDFA/AAID). All advertising consent signals are set to “denied”. Analytics data is kept for 14 months.</p>
+
+<h3>3.8 What we do not collect</h3>
+<p>The app does not collect contacts, photos, files, precise location history, advertising identifiers or payment details. There are no advertising SDKs in the app.</p>
 
 <h2>4. Why we use this information (legal bases)</h2>
 <table>
@@ -89,13 +95,14 @@
 <tr><td>Optional backup and sync</td><td>E‑mail address, saved trips</td><td>Performance of a contract (your request to register)</td></tr>
 <tr><td>Security, abuse prevention and fair‑use limits</td><td>Anonymous user ID, App Check tokens, rate‑limit counters</td><td>Legitimate interest</td></tr>
 <tr><td>Suggest a nearby airport</td><td>Device location (on device only)</td><td>Consent (system permission prompt)</td></tr>
+<tr><td>Understand how the app is used and improve it</td><td>Anonymous usage events and app‑instance ID (section 3.7)</td><td>Consent (in‑app choice, withdrawable at any time)</td></tr>
 </table>
 
 <h2>5. Service providers and third parties</h2>
 <p>We use the following providers to run TripDice. They process data only as needed to provide their service to us.</p>
 <table>
 <tr><th>Provider</th><th>Used for</th><th>What it receives</th></tr>
-<tr><td>Google Firebase (Google LLC / Google Ireland Ltd): Authentication, Cloud Firestore, Cloud Functions, App Check, Crashlytics</td><td>Sign‑in, data storage, backend, integrity checks (Crashlytics is included but switched off)</td><td>Anonymous user ID; e‑mail and saved trips for account holders. Backend region: europe‑west1 (Belgium).</td></tr>
+<tr><td>Google Firebase (Google LLC / Google Ireland Ltd): Authentication, Cloud Firestore, Cloud Functions, App Check, Crashlytics, Google Analytics for Firebase</td><td>Sign‑in, data storage, backend, integrity checks, usage analytics only if you allow it (Crashlytics is included but switched off)</td><td>Anonymous user ID; e‑mail and saved trips for account holders. Backend region: europe‑west1 (Belgium).</td></tr>
 <tr><td>Google Weather API and Open‑Meteo; Visual Crossing (previous‑year weather)</td><td>Weather for your destination and dates</td><td>Destination and date only (from our backend)</td></tr>
 <tr><td>Google Places API</td><td>Places and points of interest near the destination</td><td>Destination and language only (from our backend)</td></tr>
 <tr><td>Travelpayouts / Aviasales (where enabled)</td><td>Reference flight prices and a link to search flights</td><td>Route (airports) and dates only (from our backend). If you tap through to Aviasales, that website’s own privacy policy applies. Links may contain an affiliate identifier; this does not identify you personally.</td></tr>
@@ -111,6 +118,7 @@
 <ul>
   <li>Anonymous user IDs and rate‑limit counters: counters expire within 24 hours; anonymous accounts may be purged periodically.</li>
   <li>Account data (e‑mail, saved trips): kept until you delete your account, after which it is removed from our systems.</li>
+  <li>Usage analytics (if allowed): 14 months.</li>
   <li>Crash reports: not collected in the current version.</li>
   <li>On‑device data: until you delete it or uninstall the app.</li>
 </ul>
@@ -119,6 +127,7 @@
 <ul>
   <li><strong>Delete your account:</strong> Account screen → Delete account. This removes your e‑mail and synced trips from our servers.</li>
   <li><strong>Location:</strong> decline the permission, or revoke it in your device settings at any time.</li>
+  <li><strong>Usage analytics:</strong> tap “Don’t allow” when asked, or turn off “Share anonymous usage data” on the main screen at any time.</li>
   <li><strong>Access, correction, portability, objection, restriction:</strong> e‑mail us at <a href="mailto:tripdiceapp@gmail.com">tripdiceapp@gmail.com</a>. We will respond within one month.</li>
   <li>If you are in the EU/EEA or UK you may also lodge a complaint with your local data protection authority. In Japan, requests under the Act on the Protection of Personal Information may be sent to the same address.</li>
 </ul>
@@ -140,7 +149,7 @@
 
 <section id="ja" lang="ja">
 <h1>TripDice プライバシーポリシー</h1>
-<p class="meta">施行日：2026年9月25日 ・ 最終更新：2026年9月26日 ・ 対象：TripDice モバイルアプリ（Android / iOS、パッケージ名 <code>com.tripdice.app</code>）</p>
+<p class="meta">施行日：2026年9月25日 ・ 最終更新：2026年10月3日 ・ 対象：TripDice モバイルアプリ（Android / iOS、パッケージ名 <code>com.tripdice.app</code>）</p>
 <div class="lang"><a href="#en">English</a><a href="#ja">日本語</a></div>
 
 <p>TripDiceは、サイコロを振って旅行先をランダムに決める旅のインスピレーションアプリです。本ポリシーでは、アプリが取り扱う情報、その目的、利用者が選べる設定を、アプリの実際の動作に沿って説明します。</p>
@@ -153,6 +162,7 @@
   <li>アカウントを作らずに利用できます。保存した旅は端末内に保存されます。</li>
   <li>会員登録は任意です。登録すると、バックアップと端末間の同期のためにメールアドレスと保存した旅を当方のサーバーに保存します。</li>
   <li>位置情報は「現在地を使う」を押したときだけ、近くの出発空港を提案する目的で、端末内でのみ使用します。座標は保存せず、サーバーにも送信しません。</li>
+  <li>利用状況の分析は、<strong>利用者が許可した場合のみ</strong>行います。「許可する」を選ぶと、アプリ改善のため匿名の利用イベント（例：サイコロを振った、行き先を開いた）をGoogle Analytics for Firebaseに送信します。メイン画面の設定からいつでもオフにできます。</li>
   <li>クラッシュレポートは現在のバージョンでは<strong>オフ</strong>になっています。クラッシュレポートは送信されません。</li>
   <li>広告の表示、広告IDの利用、個人データの販売は行いません。</li>
 </ul>
@@ -186,8 +196,13 @@
 <h3>3.6 クラッシュレポート</h3>
 <p>アプリにはFirebase Crashlyticsのライブラリが含まれていますが、現在のバージョンではクラッシュレポートの収集はオフになっており、クラッシュレポート、スタックトレース、端末の診断情報は送信されません。将来のバージョンでクラッシュレポートを導入する場合は、初期状態でオフ、アプリ内で切り替え可能とし、事前に本ポリシーを更新します。</p>
 
-<h3>3.7 収集しない情報</h3>
-<p>連絡先、写真、ファイル、位置情報の履歴、広告識別子、支払い情報、アプリの利用状況に関する分析データは収集しません。第三者の広告SDKや分析SDKは組み込んでいません。</p>
+<h3>3.7 利用状況の分析（許可した場合のみ）</h3>
+<p>初めてアプリを開いたときに、匿名の利用状況の送信を許可するかどうかをお尋ねします。「許可する」を選ぶまでは何も収集しません。選択はメイン画面の「匿名の利用状況を送信」スイッチでいつでも変更できます。</p>
+<p>許可した場合、アプリはGoogle Analytics for Firebaseを使って、表示した画面、サイコロの操作（モード、地域、投げ方）、表示・閲覧した行き先（都市と国）、スポット・経路・航空券リンクのタップ、共有、旅の保存、アカウント登録・ログインなどのイベントを記録します。あわせて、ランダムなアプリインスタンスID、端末の機種、OS、アプリのバージョン、言語、IPアドレスから推定したおおよその国・都市がGoogle Analyticsに送られます（IPアドレス自体はGoogle Analyticsに保存されません）。</p>
+<p>分析データは氏名やメールアドレスとひも付けず、広告や他のアプリ・ウェブサイトをまたいだトラッキングには使いません。広告識別子（IDFA／AAID）は使用せず、広告に関する同意シグナルはすべて「拒否」に設定しています。分析データの保存期間は14か月です。</p>
+
+<h3>3.8 収集しない情報</h3>
+<p>連絡先、写真、ファイル、位置情報の履歴、広告識別子、支払い情報は収集しません。広告SDKは組み込んでいません。</p>
 
 <h2>4. 利用目的と法的根拠</h2>
 <table>
@@ -196,12 +211,13 @@
 <tr><td>任意のバックアップと同期</td><td>メールアドレス、保存した旅</td><td>契約の履行（利用者の登録申込み）</td></tr>
 <tr><td>セキュリティ、不正利用防止、利用回数の制限</td><td>匿名ユーザーID、App Checkトークン、カウンター</td><td>正当な利益</td></tr>
 <tr><td>近くの空港の提案</td><td>端末の位置情報（端末内のみ）</td><td>同意（OSの権限ダイアログ）</td></tr>
+<tr><td>利用状況の把握とアプリの改善</td><td>匿名の利用イベント、アプリインスタンスID（3.7）</td><td>同意（アプリ内での選択。いつでも撤回可能）</td></tr>
 </table>
 
 <h2>5. 委託先および第三者サービス</h2>
 <table>
 <tr><th>提供者</th><th>用途</th><th>受け取る情報</th></tr>
-<tr><td>Google Firebase（Google LLC／Google Ireland Ltd）：Authentication、Cloud Firestore、Cloud Functions、App Check、Crashlytics</td><td>サインイン、データ保存、バックエンド、完全性確認（Crashlyticsは組み込まれていますがオフ）</td><td>匿名ユーザーID。会員はメールアドレスと保存した旅。バックエンドのリージョン：europe‑west1（ベルギー）</td></tr>
+<tr><td>Google Firebase（Google LLC／Google Ireland Ltd）：Authentication、Cloud Firestore、Cloud Functions、App Check、Crashlytics、Google Analytics for Firebase</td><td>サインイン、データ保存、バックエンド、完全性確認（Crashlyticsは組み込まれていますがオフ）</td><td>匿名ユーザーID。会員はメールアドレスと保存した旅。バックエンドのリージョン：europe‑west1（ベルギー）</td></tr>
 <tr><td>Google Weather API、Open‑Meteo、Visual Crossing（前年の天気）</td><td>目的地と日程の天気</td><td>目的地と日付のみ（バックエンド経由）</td></tr>
 <tr><td>Google Places API</td><td>目的地周辺のスポット情報</td><td>目的地と言語のみ（バックエンド経由）</td></tr>
 <tr><td>Travelpayouts／Aviasales（有効な場合）</td><td>航空券の参考料金と検索リンク</td><td>路線（空港）と日程のみ（バックエンド経由）。Aviasalesへ遷移した後は同サイトのプライバシーポリシーが適用されます。リンクには提携識別子が含まれることがありますが、個人を特定するものではありません。</td></tr>
@@ -217,6 +233,7 @@
 <ul>
   <li>匿名ユーザーIDと利用回数カウンター：カウンターは24時間以内に失効。匿名アカウントは定期的に削除することがあります。</li>
   <li>アカウントデータ（メールアドレス、保存した旅）：アカウント削除まで。削除後は当方のシステムから消去します。</li>
+  <li>利用状況の分析データ（許可した場合）：14か月。</li>
   <li>クラッシュレポート：現在のバージョンでは収集していません。</li>
   <li>端末内のデータ：利用者が削除するかアプリをアンインストールするまで。</li>
 </ul>
@@ -225,6 +242,7 @@
 <ul>
   <li><strong>アカウントの削除：</strong>アカウント画面 → アカウントを削除。メールアドレスと同期した旅がサーバーから削除されます。</li>
   <li><strong>位置情報：</strong>権限を許可しない、または端末の設定からいつでも取り消せます。</li>
+  <li><strong>利用状況の分析：</strong>確認画面で「許可しない」を選ぶか、メイン画面の「匿名の利用状況を送信」をいつでもオフにできます。</li>
   <li><strong>開示、訂正、データポータビリティ、異議、処理の制限：</strong><a href="mailto:tripdiceapp@gmail.com">tripdiceapp@gmail.com</a> までご連絡ください。1か月以内に対応します。</li>
   <li>EU／EEA／英国の方は各国のデータ保護機関に申立てができます。日本の個人情報保護法に基づく請求も同じ連絡先で受け付けます。</li>
 </ul>
